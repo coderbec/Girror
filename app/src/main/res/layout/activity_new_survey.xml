@@ -1,0 +1,239 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".NewSurveyActivity">
+
+
+    <TextView
+        android:text="Right now, I am feeling:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHeading"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:text="Happy - Sad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeading"
+        android:id="@+id/txtHappySad" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarHappySad"
+        android:layout_below="@+id/txtHappySad"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:text="Alert"
+        android:layout_below="@+id/seekBarHappySad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlert" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarAlert"
+        android:layout_below="@+id/txtAlert"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Enthusiastic"
+        android:layout_below="@+id/seekBarAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEnthusiastic" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarEnthusiastic"
+        android:layout_below="@+id/txtEnthusiastic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Nervous"
+        android:layout_below="@+id/seekBarEnthusiastic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNervous" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarNervous"
+        android:layout_below="@+id/txtNervous"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <TextView
+        android:text="Frustrated"
+        android:layout_below="@+id/seekBarNervous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFrustrated" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarFrustrated"
+        android:layout_below="@+id/txtFrustrated"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Are you with someone?"
+        android:layout_below="@+id/seekBarFrustrated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlone" />
+
+        <RadioGroup
+            android:id="@+id/radioCompanions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAlone"
+            >
+
+            <RadioButton
+                android:id="@+id/radioAlone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alone"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioWithOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="With others" />
+        </RadioGroup>
+    <TextView
+            android:text="Who are you with? "
+            android:layout_below="@+id/radioCompanions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCompanions" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spouse/Partner; Girl/Boyfriend"
+            android:id="@+id/checkBox1"
+            android:layout_below="@+id/txtCompanions" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Children"
+            android:id="@+id/checkBox2"
+            android:layout_below="@+id/checkBox1" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other family"
+            android:id="@+id/checkBox3"
+            android:layout_below="@+id/checkBox2" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colleagues"
+            android:id="@+id/checkBox4"
+            android:layout_below="@+id/checkBox3" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friends"
+            android:id="@+id/checkBox5"
+            android:layout_below="@+id/checkBox4" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other people you know"
+            android:id="@+id/checkBox6"
+            android:layout_below="@+id/checkBox5" />
+
+
+    <TextView
+        android:text="Right now, what are you doing? "
+        android:layout_below="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGambling" />
+
+    <Spinner
+        android:id="@+id/spinnerGambling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/gambling_arrays"
+        android:prompt="@string/gambling_prompt"
+        android:layout_below="@+id/txtGambling" />
+
+    <TextView
+        android:text="Drinking Alcohol? "
+        android:layout_below="@+id/spinnerGambling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlcohol" />
+
+    <RadioGroup
+        android:id="@+id/radioAlcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAlcohol"
+        >
+
+        <RadioButton
+            android:id="@+id/radioYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done!"
+        android:id="@+id/btnSubmit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/radioAlcohol"/>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
